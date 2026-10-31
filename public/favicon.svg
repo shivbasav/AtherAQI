@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="aetherGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Badge matching AetherAir Logo -->
+  <rect width="64" height="64" rx="16" fill="url(#aetherGrad)"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="14.5" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  
+  <!-- AetherAir Atmospheric Wind Streamlines -->
+  <g transform="translate(11, 11) scale(1.75)" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/>
+    <path d="M9.6 4.6A2 2 0 1 1 11 8H2"/>
+    <path d="M12.6 19.4A2 2 0 1 0 14 16H2"/>
+  </g>
+</svg>
