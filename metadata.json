@@ -1,0 +1,6 @@
+{
+  "name": "AetherAir - Global Air Quality & AQI Intelligence",
+  "description": "Real-time global air quality index (AQI) map, live local air quality monitoring, pollutant breakdowns, and long-term historical trend tracking.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
