@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Wind, CheckCircle2, KeyRound } from 'lucide-react';
+import { X, Wind, CheckCircle2 } from 'lucide-react';
 import { AQI_LEVELS } from '../utils/aqiUtils';
 
 interface PollutantGuideModalProps {
@@ -23,11 +23,11 @@ export const PollutantGuideModal: React.FC<PollutantGuideModalProps> = ({
             <div className="flex items-center gap-2">
               <Wind className="w-5 h-5 text-emerald-600" />
               <h2 className="text-xl font-bold text-slate-900 font-display">
-                Air Quality Index (AQI) & Architecture Guide
+                Air Quality Index (AQI) & Health Standards
               </h2>
             </div>
             <p className="text-xs text-slate-500 mt-1">
-              Atmospheric pollutant standards, WHO guidelines, and open map infrastructure details
+              Authoritative guide to atmospheric pollutant exposure, EPA standards, and WHO guidelines
             </p>
           </div>
           <button
@@ -36,28 +36,6 @@ export const PollutantGuideModal: React.FC<PollutantGuideModalProps> = ({
           >
             <X className="w-5 h-5" />
           </button>
-        </div>
-
-        {/* Dedicated Callout: Map & Data API Key Details */}
-        <div className="mt-5 p-4 rounded-xl bg-emerald-50/70 border border-emerald-200/90 text-xs">
-          <div className="flex items-center gap-2 text-emerald-800 font-bold mb-1.5 text-sm">
-            <KeyRound className="w-4 h-4 text-emerald-700" />
-            <span>Do We Need an API Key for the Map or Data?</span>
-          </div>
-          <p className="text-emerald-900 leading-relaxed">
-            <strong>No API key is required!</strong> Everything in this application runs on 100% free, open atmospheric and cartographic infrastructure:
-          </p>
-          <ul className="mt-2 space-y-1.5 text-emerald-950 list-disc list-inside">
-            <li>
-              <strong>World Map Tiles:</strong> Served by CartoDB (Voyager / Positron) & OpenStreetMap raster tile servers without requiring any tokens or billing setup.
-            </li>
-            <li>
-              <strong>Air Quality & Historical Trends:</strong> Powered by <strong>Open-Meteo Air Quality API</strong> (coupled with the European Union's Copernicus Atmosphere Monitoring Service - CAMS), which is completely open-access with no API key or credit card needed.
-            </li>
-            <li>
-              <strong>Global Geocoding & Search:</strong> Handled by Open-Meteo's open geocoding engine with zero rate-limit hurdles for standard web usage.
-            </li>
-          </ul>
         </div>
 
         {/* Section 1: EPA Category Reference */}

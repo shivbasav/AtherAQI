@@ -74,10 +74,10 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
           <button
             onClick={onOpenGuide}
-            className="transition-colors whitespace-nowrap shrink-0 text-slate-500 hover:text-slate-800 flex items-center gap-1 text-xs"
+            className="transition-colors whitespace-nowrap shrink-0 text-slate-500 hover:text-slate-800 flex items-center gap-1 text-xs cursor-pointer"
           >
             <Info className="w-3.5 h-3.5" />
-            <span>Standards & API</span>
+            <span>Health Standards</span>
           </button>
         </nav>
 

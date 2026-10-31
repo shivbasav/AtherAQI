@@ -333,11 +333,9 @@ export default function App() {
                 Interactive World Air Quality Map
               </h2>
             </div>
-            <div className="flex items-center gap-3 text-xs text-slate-500">
-              <span className="font-mono">{stations.length} Global Stations Active</span>
-              <span>·</span>
-              <span className="text-emerald-700 font-medium">Zero API Keys Needed (Open Data)</span>
-            </div>
+            <span className="font-mono text-xs text-slate-500">
+              {stations.length} Global Stations Active
+            </span>
           </div>
 
           <WorldMap
